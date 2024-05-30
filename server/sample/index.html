@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background: rgb(204,204,204); 
+}
+    .A4 {
+  background: white;
+  /* border: 1px solid black; */
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  width: 21cm;
+  height: 29.7cm; 
+}
+@media print {
+  body, page {
+    background: white;
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+.container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 10px;
+            background: #fff;
+        }
+        header, section, footer {
+            margin-bottom: 0px;
+        }
+        header {
+            text-align: center;
+            /* background: #333; */
+            color: black;
+            padding: 10px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            padding: 2px
+        }
+        section h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .job, .education, .skill {
+            margin-bottom: 10px;
+        }
+        .job h3, .education h3 {
+            margin: 5px 0;
+            color: #333;
+        }
+        .job span, .education span {
+            font-style: italic;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            color: #666;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div> -->
+       
+        <div class="A4">
+            <div class="container">
+                <header>
+                    <h1>John Doe</h1>
+                </header>
+                <div class="contact-info">
+                    <p>Email: johndoe@example.com ||</p>
+                    <p>Phone: (123) 456-7890 ||</p>
+                    <p>LinkedIn: linkedin.com/in/johndoe ||</p>
+                    <p>GitHub: github.com/git/johndoe ||</p>
+                </div>
+                <section>
+                    <h2>MERN Stack Developer</h2>
+                    <p style="margin-top: 0px;">Experienced software developer with a strong background in web development and a passion for creating efficient and user-friendly applications. Proven ability to work in fast-paced environments and deliver high-quality results.</p>
+                </section>
+                <section>
+                    <h2>Work Experience</h2>
+                    <div class="job">
+                        <h3>Senior Software Developer <span>at XYZ Company</span></h3>
+                        <p>Jan 2018 - Present</p>
+                        <ul>
+                            <li>Developed and maintained web applications using HTML, CSS, JavaScript, and Python.</li>
+                            <li>Led a team of 5 developers in agile projects, ensuring timely delivery and high-quality code.</li>
+                            <li>Implemented new features based on customer feedback, improving user satisfaction by 30%.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <h3>Software Developer <span>at ABC Corp</span></h3>
+                        <p>May 2015 - Dec 2017</p>
+                        <ul>
+                            <li>Worked on front-end and back-end development for various client projects.</li>
+                            <li>Optimized application performance, reducing load times by 20%.</li>
+                            <li>Collaborated with designers and product managers to deliver seamless user experiences.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h2>Projects</h2>
+                    <h3 style="margin-bottom: 0px;">Project 1</h3>
+                    <p style="margin-top: 0px;">Experienced software developer with a strong background in web development and a passion for creating efficient and user-friendly applications. Proven ability to work in fast-paced environments and deliver high-quality results.</p>
+                    <h3 style="margin-bottom: 0px;">Project 2</h3>
+                    <p style="margin-top: 0px;">Experienced software developer with a strong background in web development and a passion for creating efficient and user-friendly applications. Proven ability to work in fast-paced environments and deliver high-quality results.</p>
+                </section>
+                <section>
+                    <h2>Education</h2>
+                    <div class="education">
+                        <h3>Bachelor of Science in Computer Science <span>from University of Technology</span></h3>
+                        <p>2011 - 2015</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML, CSS, JavaScript, Python</li>
+                        <li>React, Angular, Django</li>
+                        <li>Agile Methodologies</li>
+                        <li>Version Control (Git)</li>
+                    </ul>
+                </section>
+                <footer>
+                    <p>© 2024 John Doe. All rights reserved.</p>
+                </footer>
+            </div>
+        </div>
+    <!-- </div> -->
+</body>
+</html>

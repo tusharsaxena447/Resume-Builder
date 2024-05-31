@@ -25,6 +25,8 @@ export default function Form() {
     "skills" : ""
   }])
   const [hidden, setHidden] = useState("none")
+  const [hidden1, setHidden1] = useState(false)
+  const [spin, setspin] = useState(false)
   function handleSubmit(event){
     event.preventDefault()
     axios.post('http://localhost:4000/resume', form)
@@ -38,6 +40,11 @@ export default function Form() {
           })
 
      setHidden(false) 
+     setspin("fa-spin")
+     setTimeout(()=>{
+       setHidden1("none")
+
+     },2000)
        
   }
   return (
@@ -182,7 +189,7 @@ export default function Form() {
                 type="text"
                 className="form-control"
                 id="exampleFormControlInput1"
-                placeholder="Google"
+                
                 value={form.project1}
                 onChange={(e)=>{setForm({...form, project1 : e.target.value})}}
               />
@@ -212,7 +219,7 @@ export default function Form() {
                 type="text"
                 className="form-control"
                 id="exampleFormControlInput1"
-                placeholder="Google"
+                
                 value={form.project2}
                 onChange={(e)=>{setForm({...form, project2 : e.target.value})}}
               />
@@ -271,6 +278,7 @@ export default function Form() {
               <input
                 className="form-control"
                 id="exampleFormControlTextarea1"
+                placeholder="Bachelors in Computer Science"
                 value={form.degree}
                 onChange={(e)=>{setForm({...form, degree : e.target.value})}}
                 
@@ -294,11 +302,11 @@ export default function Form() {
          
           
           <div className="col-12">
-          
-            <button type="submit" className="btn btn-primary mb-2">
-              Generate Resume
-            </button>
-            
+          <div className={`d-${hidden1}`}>
+          <button type="submit"   className={`buttonload `}>
+  <i className={`fa fa-refresh ${spin}`}></i>Generate Resume
+</button>
+</div>
           
           </div>
         </form>

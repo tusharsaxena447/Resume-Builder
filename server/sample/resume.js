@@ -90,9 +90,9 @@ page[size="A4"] {
             font-size: 0.8em;
         }
         @media print {
-  body, page {
+  page {
     background: white;
-    margin: 0;
+    margin: auto;
     box-shadow: 0;
   }
 }

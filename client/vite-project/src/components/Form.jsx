@@ -38,13 +38,13 @@ export default function Form() {
             })
             saveAs(pdfblob , "Resume.pdf")
           })
+          
+          setspin("fa-spin")
+          setTimeout(()=>{
+            setHidden1("none")
+            setHidden(false) 
 
-     setHidden(false) 
-     setspin("fa-spin")
-     setTimeout(()=>{
-       setHidden1("none")
-
-     },2000)
+     },5000)
        
   }
   return (
